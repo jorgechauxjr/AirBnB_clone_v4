@@ -153,12 +153,18 @@ EOF  all  create  destroy  help  quit  show  update
 ## Bugs
 No known bugs at this time. 
 
-## Authors
+## Authors of previous versions
 Alexa Orrico - [Github](https://github.com/alexaorrico) / [Twitter](https://twitter.com/alexa_orrico)  
 Jennifer Huang - [Github](https://github.com/jhuang10123) / [Twitter](https://twitter.com/earthtojhuang)  
 Jhoan Zamora - [Github](https://github.com/jzamora5) / [Twitter](https://twitter.com/JhoanZamora10)  
-David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)
-
+David Ovalle - [Github](https://github.com/Nukemenonai) / [Twitter](https://twitter.com/disartDave)  
 Second part of Airbnb: Joann Vuong
+
+## Authors AirBnB_clone_v4
+Víctor Hugo Hernández - [Github](https://github.com/vik407) / [Twitter](https://twitter.com/vik407)  
+Jorge Chaux - [Github](https://github.com/jorgechauxjr) / [Twitter](https://twitter.com/jorgechauxjr)  
+
+
+
 ## License
 Public Domain. No copy write protection. 
