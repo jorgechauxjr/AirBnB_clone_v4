@@ -20,6 +20,6 @@ header #api_status{
     background-color: #CCCCCC;
 }
 
-.available{
+#api_status.available{
     background-color: #ff545f;
 }
