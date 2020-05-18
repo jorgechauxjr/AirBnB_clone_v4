@@ -1,9 +1,8 @@
 .places {
-    column-count: 2;
-    columns: 30em;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding: 0 20px;
-    margin-top: 1%;
     margin-bottom: 8%;
 }
 @media only screen and (max-width: 920px)
@@ -14,7 +13,7 @@
     }
 }
 
-.placesh1 h1 {
+.places h1 {
     width: 100%;
     margin-right: 400px;
     text-align: left;
@@ -98,4 +97,21 @@
 
 .user {
   margin-bottom: 1.5%;
+}
+.reviews {
+    margin-top: 40px;
+}
+.reviews h2 {
+    font-size: 16px;
+    border-bottom: #DDDDDD 1px;
+}
+.reviews ul {
+    list-style: none;
+    display: none;
+}
+.reviews ul li h3 {
+    font-size: 14px;
+}
+.reviews ul li p {
+    font-size: 12px;
 }
