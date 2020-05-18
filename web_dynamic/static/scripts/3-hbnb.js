@@ -17,6 +17,13 @@ $(document).ready(() => {
     });
 });
 
+function plurals(n){
+    if (n > 1){
+        return "s";
+    }
+    return "";
+};
+
 /*Check Api status*/
 $.getJSON('http://127.0.0.1:5001/api/v1/status', data => {
 if (data.status === 'OK') {
@@ -41,11 +48,11 @@ $.ajax({
             <div class="price_by_night">${place.price_by_night}</div>
             </div>
             <div class="information">
-                <div class="max_guest">${place.max_guest} Guests</div>
-                <div class="number_rooms">${place.number_rooms} Bedrooms</div>
-                <div class="number_bathrooms">${place.number_bathrooms} Bathrooms</div>
+                <div class="max_guest">${place.max_guest} Guest${plurals(place.max_guest)}</div>
+                <div class="number_rooms">${place.number_rooms} Bedroom${plurals(place.number_rooms)}</div>
+                <div class="number_bathrooms">${place.number_bathrooms} Bathroom${plurals(place.number_bathrooms)}</div>
             </div>
-	    <div class="description">${place.description} </div>
+        <div class="description">${place.description} </div>
             </article>`)
         })
     }
