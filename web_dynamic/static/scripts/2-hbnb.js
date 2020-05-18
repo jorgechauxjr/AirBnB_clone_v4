@@ -1,13 +1,13 @@
 $(document).ready(() => {
-  const amenCheckList = {}
+  const amenCheckList = {};
   $('input[type=checkbox]').change(function () {
     if ($(this).is(':checked')) {
-      let key = $(this).attr('data-id')
-      let value = $(this).attr('data-name')
-      amenCheckList[key] = value
+      const key = $(this).attr('data-id');
+      const value = $(this).attr('data-name');
+      amenCheckList[key] = value;
     }
     if (!$(this).is(':checked')) {
-      delete amenCheckList[$(this).attr('data-id')]
+      delete amenCheckList[$(this).attr('data-id')];
     }
     const list = [];
     for (const name in amenCheckList) {
@@ -17,11 +17,11 @@ $(document).ready(() => {
   });
 });
 
-/*Check Api status*/
+/* Check Api status */
 $.getJSON('http://0.0.0.0:5001/api/v1/status', data => {
-    if (data.status === 'OK') {
-      $('#api_status').addClass('available')
-    } else {
-      $('#api_status').removeClass('available')
-    }
-  });
+  if (data.status === 'OK') {
+    $('#api_status').addClass('available');
+  } else {
+    $('#api_status').removeClass('available');
+  }
+});
