@@ -45,6 +45,7 @@ $.ajax({
                 <div class="number_rooms">${place.number_rooms} Bedrooms</div>
                 <div class="number_bathrooms">${place.number_bathrooms} Bathrooms</div>
             </div>
+	    <div class="description">${place.description} </div>
             </article>`)
         })
     }
